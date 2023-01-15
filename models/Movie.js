@@ -11,6 +11,10 @@ const MovieSchema = new Schema(
       vote_average: {
          type: String,
          required: true,
+      },
+      id: {
+         type: Number,
+         required: true,
 
       },
  

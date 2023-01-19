@@ -1,4 +1,3 @@
-
 import  User  from "../models/User.js";
 import { hashSync,compareSync } from "bcrypt";
 import  jwt   from "jsonwebtoken";
@@ -37,7 +36,7 @@ AuthController.register = async (req, res) => {
 AuthController.login = async (req, res) => {
    console.log(req.headers);
    try {
-      const { email, password } = req.body;
+      const { email, password } = req.body;  //le manda el body   
       //Validación de lo que me llega por body
       if (!email || !password) {
          return res.status(400).json({
@@ -62,6 +61,8 @@ AuthController.login = async (req, res) => {
          success: true,
          message: `User Logged as ${user.role.toUpperCase()}`,
          token: token,
+         role: user.role,
+         id: user._id,
       });
    } catch (error) {
       return res.status(500).json({

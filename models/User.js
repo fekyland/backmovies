@@ -24,6 +24,10 @@ const UserSchema = new Schema(
          enum: ["user", "admin", "super_admin"],
          default: "user",
       },
+      movies: {
+         type: Array,
+         default:[],
+      },
    },
    {
       timestamps: true,

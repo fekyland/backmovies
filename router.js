@@ -13,8 +13,8 @@ router.use("/users", usersRouter);
 //movies
 router.use("/movies", moviesRouter);
 
-
 // auth
 router.use("/auth", authRouter);
 
 export default router;
+

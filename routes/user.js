@@ -7,11 +7,11 @@ import  verifyToken from "../middelwares/verifyToken.js";
 
 /* GET users listing. */
 router.get("/", verifyToken, isSuperAdmin, UserController.getAll);
-//router.get("/:id", verifyToken, isSuperAdmin, UserController.getRented);
+router.get("/:id", verifyToken, isSuperAdmin, UserController.getById);
 //router.get("/:id",UserController.getById);
 //router.get("/",UserController.getAll);
 
-router.patch("/users/:userId/rent/:movieId",UserController.rentUserMovies);
+router.patch("/:userId/rent/:movieId",UserController.rentUserMovies);
 router.delete("/delete/:id",UserController.deleteById);
 
 export default router;

@@ -57,12 +57,14 @@ AuthController.login = async (req, res) => {
          process.env.JWT_SECRET,
          { expiresIn: "20m" }
       );
+      
       return res.status(200).json({
          success: true,
          message: `User Logged as ${user.role.toUpperCase()}`,
          token: token,
          role: user.role,
          id: user._id,
+         movies: user.movies,
       });
    } catch (error) {
       return res.status(500).json({

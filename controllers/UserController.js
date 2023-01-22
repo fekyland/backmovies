@@ -45,9 +45,13 @@ UserController.rentUserMovies = async (req, res) => {
    console.log(req.params);
    try {
      const user = await User.findById(req.params.userId);
+     console.log(user)
+     //const movie = req.params.movieId;
      const movie = req.body;
-     // const match = user.movies.find((m) => m._id == movie._id);
-     const match = false;
+     //console.log("validacion de alquiler")
+     //console.log(movie)
+     //const match = user.movies.find((m) => m == movie);
+    const match = false;
      if (match) {
        res.json({
          message: "User already have this movie",
@@ -62,6 +66,7 @@ UserController.rentUserMovies = async (req, res) => {
          message: "User movies updated successfully",
          data: updatedUser,
          inserted: true,
+         movies: user.movies,
        });
      }
    } catch (error) {

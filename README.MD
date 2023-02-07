@@ -32,8 +32,10 @@
 
 ## 🧐 About <a name = "about"></a>
 
-API is an api open source that enable users to search movies (name,id,email,phone) to stick with their reservations attributes (name of hotels,dates of concurrency,reservation id,)a get full informed about de client history reservation and hotels that they stayed or staying 
-
+BackendMovies is an api open source that you can CRUD users and movies.
+user role atributes: user,super_admin:
+user can buy movies ,has their personal panel for seeing their rented movies.
+super_admin: can see de the list of user also can delete users. 
 ![Screenshot](/img/agencia.png)
 
 
@@ -44,14 +46,14 @@ API is an api open source that enable users to search movies (name,id,email,phon
 
 ### Prerequisites
 
-for using this api you have to get NODEJS
+For using this api you have to get NODEJS,
 
 
 ### Installing
 
 npm install i
 
-our package.json has all depencies to start de program,only you have to run npm i and node will install all the de dependencies 
+Our package.json has all depencies to start de program,only you have to run npm i and node will install all the de dependencies 
 
 
 ## 🔧 Running the API <a name = "tests"></a>
@@ -63,20 +65,22 @@ type "run start nodemon"
 ### Break down into end to end tests
 
 API Endpoints
-| HTTP Verbs   | Endpoints | Action |
-| --- | --- | --- |
-| GET | /movies/ | To get a list of movies|
-| GET | /movies:id| To search movies with their id  |
-| POST | /users/ | To login user by email and id |
-  POST | /users/ | to create users  |
-|
+| HTTP Verbs | Endpoints                 | Action                          |
+|    ---     |        ---                |           ---                   |
+|    GET     | /movies/                  | To get a list of movies         |
+|    GET     | /movies/:id               | To search movies with their id  |
+|   DELETE   | /delete/:id               | To delete users by id
+|   PATCH    | /:userId/rent/:movieId:   | To rent movies,user collection been update in movies sub array |
+|   POST     | /login/                   | To login user by email and id   |
+|   POST     | /register/                | to create users                 |
+
 
 ## 🎈 Usage <a name="usage"></a>
 
 
 type : npm run dev
 
-put on your browser http://localhost:3000/clientes/ this give you de list of clients
+put on your browser http://localhost:3000/movies/ this give you de list of movies
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>

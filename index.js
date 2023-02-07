@@ -24,7 +24,7 @@ app.use(cors(corsOptions));
 // routes
 app.use(router);
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 db()
    .then(() => {

@@ -5,13 +5,12 @@ const router = Router();
 import  indexRouter   from "./routes/index.js";
 import  usersRouter   from "./routes/user.js";
 import  authRouter  from "./routes/auth.js";
-import  moviesRouter  from "./routes/movies.js";
-// rusers
+import moviesRouter from "./routes/movies.js"
 router.use("/", indexRouter);
 router.use("/users", usersRouter);
 
 //movies
-router.use("/movies", moviesRouter);
+router.use("/movies",moviesRouter);
 
 // auth
 router.use("/auth", authRouter);

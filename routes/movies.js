@@ -6,4 +6,6 @@ import MovieController  from "../controllers/MovieController.js"
 router.get("/", MovieController.getAll);
 router.get("/id/:id", MovieController.getById);
 
-export default router;
+
+
+

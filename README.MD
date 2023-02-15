@@ -3,20 +3,9 @@
  <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">agenciadeviajes</h3>
+<h3 align="center">Backend Movieclub</h3>
 
-<div align="center">
-
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
-
----
-
-<p align="center"> Few lines describing your project.
+<p align="center"> MovieRental is a web site,that you can Rent movies,based on MERN tecnologies,this is the part of backend.
     <br> 
 </p>
 
@@ -24,29 +13,24 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
-## 🧐 About <a name = "about"></a>
+
+## 🧐 About <a name = "about">@Fekyland</a>
 
 BackendMovies is an api open source that you can CRUD users and movies.
-user role atributes: user,super_admin:
-user can buy movies ,has their personal panel for seeing their rented movies.
-super_admin: can see de the list of user also can delete users. 
-![Screenshot](/img/agencia.png)
-
+User role atributes: user,super_admin:
+User can buy movies ,has their personal panel for seeing their rented movies.
+Super_admin: can see de the list of user also can delete users. 
 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-
-
 ### Prerequisites
 
-For using this api you have to get NODEJS,
+For using this api you have to get NODEJS,Expressjs
 
 
 ### Installing
@@ -65,14 +49,16 @@ type "run start nodemon"
 ### Break down into end to end tests
 
 API Endpoints
-| HTTP Verbs | Endpoints                 | Action                          |
-|    ---     |        ---                |           ---                   |
-|    GET     | /movies/                  | To get a list of movies         |
-|    GET     | /movies/:id               | To search movies with their id  |
-|   DELETE   | /delete/:id               | To delete users by id
-|   PATCH    | /:userId/rent/:movieId:   | To rent movies,user collection been update in movies sub array |
-|   POST     | /login/                   | To login user by email and id   |
-|   POST     | /register/                | to create users                 |
+| HTTP Verbs | Endpoints                      | Action                          |
+|    ---     |        ---                     |           ---                   |
+|    GET     | /movies/                       | To get a list of movies         |
+|    GET     | /movies/:id                    | To search movies with their id  |
+|    GET     | /users/                        | Get all users |
+|    GET     | /users/:id                     | Get users by id |
+|   DELETE   | /users/delete/:id              | To delete users by id
+|   PATCH    | /:userId/rent/:movieId:        | To rent movies,user collection been update in movies sub array |
+|   POST     | /auth/login/                   | To login user by email and id   |
+|   POST     | /auth/register/                | to create users                 |
 
 
 ## 🎈 Usage <a name="usage"></a>

@@ -5,7 +5,7 @@
 
 <h3 align="center">Backend Movieclub</h3>
 
-<p align="center"> MovieRental is a web site,that you can Rent movies,based on MERN tecnologies,this is the part of backend.
+<p align="center"> MovieRental is a web site,that you can Rent movies,based on MERN tecnologies,this is the part of back-end.
     <br> 
 </p>
 
